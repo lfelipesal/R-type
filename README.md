@@ -1,4 +1,7 @@
 
+![Thumbnail R-type](https://user-images.githubusercontent.com/93229568/197653776-d8cfa24e-c242-4f99-8b78-023ddccf92ea.jpg)
+
+
 ## Trabalho final da disciplina de Desenvolvimento de software
 
 O objetivo deste trabalho é desenvolver um jogo eletrônico gráfico semelhante às versôes clássicas (antigas) da franquia R-type. 
@@ -32,14 +35,6 @@ Baseando no jogo foi feita uma apresentação com o objetivo de mostrar as grand
 ![Slide15](https://user-images.githubusercontent.com/93229568/166400826-e88ed830-7d4f-47d9-9553-9c7b5a5430d0.jpg)
     
 </details>
-
-Adicione a imagem de capa com o tema do seu projeto:
-
-![Thumbnail GitHub](https://user-images.githubusercontent.com/8989346/123303345-171fc980-d4f4-11eb-84ae-cb0e49bfb126.png)
-
-> Você pode pegar a imagem a partir [deste template](https://docs.google.com/presentation/d/1im_-_spDdNEEsfrmjeZet2ZzVKjG-sQSBWfPFJhZ4q0/edit#slide=id.gb6f422ab58_0_111).
-
-> Ou gerar neste [site](https://alura-github-thumbnail-generator.vercel.app/).
 
 Após adicionar a imagem, também modifique as configurações do projeto para garantir que a imagem vai ser carregada como thumbnail:
 
