@@ -2,7 +2,7 @@
 ![Thumbnail R-type](https://user-images.githubusercontent.com/93229568/197653776-d8cfa24e-c242-4f99-8b78-023ddccf92ea.jpg)
 
 
-## Trabalho final da disciplina de Desenvolvimento de software
+# Trabalho final da disciplina de Desenvolvimento de software
 
 O objetivo deste trabalho é desenvolver um jogo eletrônico gráfico semelhante às versôes clássicas (antigas) da franquia R-type. 
 R-Type é um videogame de fliperama de rolagem horizontal desenvolvido e lançado pela Irem em 1987. 
@@ -35,53 +35,51 @@ Baseando no jogo foi feita uma apresentação com o objetivo de mostrar as grand
 ![Slide15](https://user-images.githubusercontent.com/93229568/166400826-e88ed830-7d4f-47d9-9553-9c7b5a5430d0.jpg)
     
 </details>
-
-Após adicionar a imagem, também modifique as configurações do projeto para garantir que a imagem vai ser carregada como thumbnail:
-
-**Settings** > **Options** > **Social preview** > **Edit** > **Upload an image...**
-
-<details>
-  <summary><b>Demonstração da adição de thumbnail<b/></summary>
-    
-![adicionando-imagem-preview](https://user-images.githubusercontent.com/8989346/123303159-e0e24a00-d4f3-11eb-9900-92a8b15bc31b.gif)
-    
-</details>
   
-# Nome do projeto
+## 🔨 Funcionalidades/Regras do jogo
 
-Descreva o que é o projeto e o que ele faz
+  - `Controle preciso dos movimentos da nave`:  O jogador deve ter acesso a teclas que controlam a
+movimentação da nave e essa deve responder aos comandos do jogador. As teclas escolhidas foram as setas.
+  
+  - `Tiro básico`:  O jogador deve ter acesso a uma tecla que dispara o tiro do canhão do tanque. O tiro não deve 
+mudar de direção depois que ele foi lançado e só deve para depois que ele sair da tela ou colidir: 1) com o tanque inimigo 
+ou 2) com um obstáculo do cenário. Além disso, um canhão só pode disparar 1 tiro por vez. A tecla utilizada para o tiro foi o espaço.
+  
+  - `Tiro avançado`:  Ao segurar o botão de tiro, o tiro deve aumentar de tamanho e, quando disparado no
+seu tamanho máximo, deve ser capaz de eliminar todos os inimigos que estejam em sua rota.
+  
+  - `Bloco`:  O cenário deve conter pelo menos um bloco que elimina o jogador e inimigos que colidem com
+ele. Além disso, blocos devem ter tamanhos e posições variáveis, mas devem ocupar, no mínimo, um
+quinto da altura da tela e devem ter comprimento pelo menos equivalente à largura da tela. Enquanto
+inimigos podem ser destruídos, blocos não podem.
+  
+  - `Controle de coliões`:  Os objetos presentes no cenário não podem se sobrepor. Tiros não podem
+atravessar obstáculos e nem inimigos. Da mesma forma, os movimentos dos inimigos e da nave do
+jogador devem ser limitados aos espaços vazios do cenário, ou seja, não podem sair da tela e não
+podem atravessar blocos.
+ 
+  - `Pontuação`: Cada inimigo destruído deve aumentar a pontuação do jogador. Inimigos devem oferecer
+valores em pontuação diferentes, de acordo com algum critério (ex: tamanho). O cenário deve exibir
+os pontos ganhos pelos jogadores.
+  
+  - `Fim de jogo`:  O jogo deve terminar quando o jogador colidir com um inimigo ou com um bloco.
+  
+  - `Recorde`:  A maior pontuação registrada (recorde) deve ser armazenada em um arquivo. O valor do
+recorde deve ser exibido sempre que o personagem terminar o jogo de forma vitoriosa. Se além disso
+ele também bater o recorde, uma mensagem informativa deve ser apresentada para ele. 
 
-## 🔨 Funcionalidades do projeto
-
-Indique quais são as funcionalidades e comportamentos do App
-
-Se possível, apresente um exemplo visual do projeto, seja gif, imagens ou vídeo, abaixo segue um exemplo:
-
-![](https://github.com/alura-cursos/android-com-kotlin-personalizando-ui/raw/master/img/amostra.gif)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
-
-- `Funcionalidade 1`: descrição da funcionalidade 1
-- `Funcionalidade 2`: descrição da funcionalidade 2
-  - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3
+- `Linguagem C`
+- `Biblioteca Allegro5`
+- `Windows - MinGW`
 
 ## 📁 Acesso ao projeto
 
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
+Você pode acessar o codigo fonte que foi desenvolvido para jogo [aqui](https://github.com/lfelipesal/R-type/blob/main/tp.c).
 
 ## 🛠️ Abrir e rodar o projeto
 
-**Apresente as instruções necessárias para abrir e executar o projeto**
-
-## 📚 Mais informações do curso
-
-**Faça um CTA (_call to action_) para o curso do projeto**
-
-# R-type
-
-Jogo desenvolvido através ambiente Allegro para um trabalho prático da disciplina de Programação de Software 1, depois do desenvolvimento do jogo foi feita a 
- 
-
+Para jogar o que foi desenvolvido basta clonar esse repositório na maquina local no ambiente Windows, entrar na pasta pelo prompt de comando(cmd),
+e dentro da pasta digitar o comando make.
